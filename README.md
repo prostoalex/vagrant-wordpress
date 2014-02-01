@@ -7,6 +7,7 @@ Vagrant configuration to load up Apache2, MySQL, PHP5 and latest version of Word
 
 Usage:
 [Download Vagrant](http://www.vagrantup.com/downloads.html).
+
     git clone git@github.com:prostoalex/vagrant-wordpress.git
     cd vagrant-wordpress
     vagrant up
