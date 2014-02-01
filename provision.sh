@@ -24,3 +24,5 @@ cd /var/www
 # Left over from apache2 install
 rm index.html
 svn co http://core.svn.wordpress.org/trunk/ >/dev/null 2>&1
+
+echo "Successfully checked out WordPress. You might want to create a new MySQL user and password, and update wp-config.php accordingly. MySQL root password is SOMEPASSWORD123 and should probably be changed as well."
