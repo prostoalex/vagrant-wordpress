@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 echo "Updating packages..."
 apt-get update >/dev/null 2>&1
 
