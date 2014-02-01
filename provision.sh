@@ -16,9 +16,11 @@ apt-get install -y mysql-server mysql-client >/dev/null 2>&1
 echo "Installing Apache and setting it up..."
 apt-get install -y apache2 php5-common libapache2-mod-php5 php5-cli >/dev/null 2>&1
 
-echo "Installing Git..."
-apt-get install -y git >/dev/null 2>&1
+echo "Installing subversion..."
+apt-get install -y subversion >/dev/null 2>&1
 
-echo "Cloning Wordpress repo into /var/www"
+echo "Checking out Wordpress repo into /var/www"
 cd /var/www
-git clone git@github.com:WordPress/WordPress.git .
+# Left over from apache2 install
+rm index.html
+svn co http://core.svn.wordpress.org/trunk/ >/dev/null 2>&1
